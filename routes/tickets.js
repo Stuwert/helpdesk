@@ -7,9 +7,10 @@ function Tickets() {
 }
 
 router.get('/tickets', function(req, res, next) {
-  tickets().select().then(function (tickets) {
-    res.render('tickets/index', {tickets: tickets});
-  })
+  res.send("Bing Bong")
+  // tickets().select().then(function (tickets) {
+  //   res.render('tickets/index', {tickets: tickets});
+  // })
 });
 
 router.get('/tickets/closed', function(req, res, next) {
